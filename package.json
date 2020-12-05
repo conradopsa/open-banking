@@ -1,0 +1,49 @@
+{
+  "name": "open-banking-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/src/start.js",
+  "scripts": {
+    "test": "jest --silent --runInBand",
+    "compile": "tsc && node build/src/start.js",
+    "clear": "tsc && node build/src/tasks/clear.js",
+    "clear:compile": "npm run clear && npm run compile",
+    "watch": "nodemon --config watch-config.json",
+    "clear:watch": "nodemon --config watch-config.json --exec \"npm run clear:compile\""
+  },
+  "keywords": [],
+  "author": "Time 3",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^8.3.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.5",
+    "swagger-jsdoc": "^4.0.0",
+    "swagger-ui-express": "^4.1.4",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-decorators": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.1",
+    "@babel/runtime": "^7.12.1",
+    "@types/express": "^4.17.7",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.0.27",
+    "@types/supertest": "^2.0.10",
+    "@types/swagger-jsdoc": "^3.0.2",
+    "@types/swagger-ui-express": "^4.1.2",
+    "@types/validator": "^13.1.0",
+    "babel-jest": "^26.5.2",
+    "jest": "^26.5.3",
+    "superagent": "^6.1.0",
+    "supertest": "^5.0.0",
+    "ts-jest": "^26.4.1"
+  }
+}

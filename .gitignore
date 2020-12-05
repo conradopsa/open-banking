@@ -1,0 +1,7 @@
+node_modules
+build
+.env
+.vscode
+schemaspy
+schemaspy.properties
+resource/test/output

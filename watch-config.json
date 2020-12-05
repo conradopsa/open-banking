@@ -1,0 +1,15 @@
+{
+    "quiet": true,
+    "exec": "npm run compile",
+    "verbose": true,
+    "ignore": [
+        "build/*",
+        "node_modules/*",
+        "schemaspy/*"
+    ],
+    "watch": [
+        ".env",
+        "*.*"
+    ],
+    "ext": "ts,js,json,html,yml"
+}

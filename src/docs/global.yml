@@ -1,0 +1,4 @@
+components:
+  responses:
+    200:
+      description: Successful!

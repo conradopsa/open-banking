@@ -1,0 +1,88 @@
+
+
+.dispositivos {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-content: space-between;;
+}
+  .header{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+  }
+  .footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #101010;
+  }
+
+  .footer-menu{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    width: 90vw;
+  }
+  
+  .setting-icon{
+    display: block;
+  }
+
+  .title{
+    color: #00D6D6;
+    font-weight: bold;
+  }
+
+  .title-content{
+      align-self: center;
+      text-align: center;
+  }
+
+  .arrow-down{
+      align-self: center;
+  }
+
+  .title-card{
+      color: #00D6D6;
+  }
+
+  .button-title-card{
+    color: #FFFFFF !important;
+  }
+
+  .status-title-card{
+    color: #00D6D6;
+    font-size: 12px !important;
+  }
+
+  .content-card{
+      color: #9D9D9D;
+  }
+
+  .content-card-item{
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+  }
+
+  .content-card-left{
+    flex: 3;
+  }
+
+  .content-card-right{
+    align-self: center;
+    flex: 1;
+  }
+
+  .status-title-card-pendent{
+    color: #9D9D9D;
+    font-size: 12px !important;
+  }

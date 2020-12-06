@@ -1,5 +1,5 @@
 import './Home.scss';
-import {BsJustify} from 'react-icons/bs';
+import {BsJustify, BsArrowLeftRight} from 'react-icons/bs';
 import {AiFillSetting, AiFillHome, AiOutlineHistory} from 'react-icons/ai';
 import {FaLandmark} from 'react-icons/fa'
 
@@ -13,6 +13,12 @@ function Home() {
                 </div>
                 <div className="content">
                     <p></p>
+                </div>
+                <div>
+                    <div class="button-option">
+                        <BsArrowLeftRight color="black" size="25"/>
+                        <p>TRANSAÇÕES</p>
+                    </div>
                 </div>
                 <div className="home-footer">
                     <div className="footer-menu">

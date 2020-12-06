@@ -50,6 +50,38 @@
 
   .button-option{
     width: 70px;
-    height: 70px;
+    height: 75px;
     background-color: #00D6D6;
+    text-align: -webkit-center;
+  }
+
+  .transaction{
+      font-size: 9px;
+      font-weight: bold;
+  }
+
+  .transaction-icon{
+    margin-top: 10px;
+  }
+
+  .options{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-between;
+  }
+
+  .dispositivos-name{
+      margin-top: -7px;
+      font-size: 9px;
+      font-weight: bold;
+  }
+
+  .meus-name{
+    margin-top: 3px;
+    font-size: 9px;
+    font-weight: bold;
   }

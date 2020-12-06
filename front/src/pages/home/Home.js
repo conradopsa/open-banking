@@ -1,7 +1,8 @@
 import './Home.scss';
-import {BsJustify, BsArrowLeftRight} from 'react-icons/bs';
+import {BsJustify, BsArrowLeftRight, BsFillXDiamondFill} from 'react-icons/bs';
 import {AiFillSetting, AiFillHome, AiOutlineHistory} from 'react-icons/ai';
-import {FaLandmark} from 'react-icons/fa'
+import {FaLandmark} from 'react-icons/fa';
+import {MdSpeakerPhone} from 'react-icons/md';
 
 function Home() {
     return (
@@ -14,10 +15,19 @@ function Home() {
                 <div className="content">
                     <p></p>
                 </div>
-                <div>
+                <div className="options">
                     <div class="button-option">
-                        <BsArrowLeftRight color="black" size="25"/>
-                        <p>TRANSAÇÕES</p>
+                        <BsArrowLeftRight color="black" size="30" className="transaction-icon"/>
+                        <p className="transaction">TRANSFERIR</p>
+                    </div>
+                    <div class="button-option">
+                        <BsFillXDiamondFill color="black" size="30" className="transaction-icon"/>
+                        <p className="transaction">PIX</p>
+                    </div>
+                    <div class="button-option">
+                        <MdSpeakerPhone color="black" size="30" className="transaction-icon"/>
+                        <p className="meus-name">MEUS</p>
+                        <p className="dispositivos-name">DISPOSITIVOS</p>
                     </div>
                 </div>
                 <div className="home-footer">

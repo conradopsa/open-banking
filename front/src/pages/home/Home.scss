@@ -1,0 +1,49 @@
+
+
+.home {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-content: space-between;;
+}
+  .home-header{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+  }
+  .home-footer{
+    position: absolute;
+	bottom: 0;
+  }
+
+  .footer-menu{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+    width: 90vw;
+  }
+  
+  .setting-icon{
+    display: block;
+  }
+  
+  .display-icon{
+    display: block;
+  }
+  
+  .home-icon{
+    display: block;
+  }
+  
+  .content{
+    display: flex;
+    flex: 1;
+  }

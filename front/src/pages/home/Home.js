@@ -3,7 +3,8 @@ import {BsJustify, BsArrowLeftRight, BsFillXDiamondFill} from 'react-icons/bs';
 import {AiFillSetting, AiFillHome, AiOutlineHistory, AiOutlineQrcode} from 'react-icons/ai';
 import {FaLandmark} from 'react-icons/fa';
 import {MdSpeakerPhone} from 'react-icons/md';
-import {BiChevronRight} from 'react-icons/bi'
+import {BiChevronRight, BiChevronDown} from 'react-icons/bi';
+import image from './../../assets/logo.png';
 
 function Home() {
     return (
@@ -12,6 +13,11 @@ function Home() {
                 <div className="home-header">
                     <BsJustify color="#00D6D6" size="25" className="display-icon"/>
                     <AiFillSetting color="#00D6D6" size="25" className="setting-icon"/>
+                </div>
+                <img className="logo" src={image} width="100"/>
+                <div className="user-name-content">
+                    <p className="user-name">OLÁ, DARLAN</p>
+                    <BiChevronDown color="#00D6D6" size="30" className="arrow-down"/>
                 </div>
                 <div className="content">
                     <p className="saldo">SALDO</p>

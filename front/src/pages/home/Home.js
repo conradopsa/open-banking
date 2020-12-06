@@ -1,8 +1,9 @@
 import './Home.scss';
 import {BsJustify, BsArrowLeftRight, BsFillXDiamondFill} from 'react-icons/bs';
-import {AiFillSetting, AiFillHome, AiOutlineHistory} from 'react-icons/ai';
+import {AiFillSetting, AiFillHome, AiOutlineHistory, AiOutlineQrcode} from 'react-icons/ai';
 import {FaLandmark} from 'react-icons/fa';
 import {MdSpeakerPhone} from 'react-icons/md';
+import {BiChevronRight} from 'react-icons/bi'
 
 function Home() {
     return (
@@ -13,7 +14,15 @@ function Home() {
                     <AiFillSetting color="#00D6D6" size="25" className="setting-icon"/>
                 </div>
                 <div className="content">
-                    <p></p>
+                    <p className="saldo">SALDO</p>
+                    <p className="saldo-value">R$100,00</p>
+                </div>
+                <div className="qrCode">
+                    <div className="qrcode-content">
+                        <AiOutlineQrcode color="black" size="30"/>
+                        <p className="access-name">LIBERAR ACESSO</p>
+                        <BiChevronRight color="black" size="30" />
+                    </div>
                 </div>
                 <div className="options">
                     <div class="button-option">

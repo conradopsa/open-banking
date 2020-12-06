@@ -46,6 +46,9 @@
   .content{
     display: flex;
     flex: 1;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-bottom: 30px;
   }
 
   .button-option{
@@ -84,4 +87,45 @@
     margin-top: 3px;
     font-size: 9px;
     font-weight: bold;
+  }
+
+  .qrCode{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #00D6D6;
+    width: 250px;
+    height: 40px;
+    border-radius: 90px;
+    align-self: center;
+    margin-bottom: 40px;
+  }
+
+  .qrcode-content{
+    flex-direction: row;
+    flex: 1;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+  }
+
+  .access-name{
+    margin-left: 20px;
+    font-size: 12px;
+    margin-right: 6px;
+    font-weight: bold;
+  }
+
+  .saldo{
+    color: #00D6D6;
+    font-weight: bold;
+  } 
+
+  .saldo-value{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -5px;
   }

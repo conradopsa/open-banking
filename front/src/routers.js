@@ -1,5 +1,6 @@
 import Home from './pages/home/Home'
-import QrChecked from './pages/qrChecked/QrChecked'
+import QrChecked from './pages/qrChecked/QrChecked';
+import Dispositivos from './pages/dispositivos/Dispositivos';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function Routers() {
@@ -11,6 +12,7 @@ function Routers() {
                 </Route>
 
                 <Route path="/dispositivos">
+                    <Dispositivos/>
                 </Route>   
 
                 <Route path="/checked">

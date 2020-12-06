@@ -1,0 +1,50 @@
+
+
+.dispositivos {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-content: space-between;;
+}
+  .header{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+  }
+  .footer{
+    position: absolute;
+	bottom: 0;
+  }
+
+  .footer-menu{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    width: 90vw;
+  }
+  
+  .setting-icon{
+    display: block;
+  }
+
+  .title{
+    color: #00D6D6;
+    font-weight: bold;
+  }
+
+  .title-content{
+      align-self: center;
+      text-align: center;
+  }
+
+  .arrow-down{
+      align-self: center;
+  }

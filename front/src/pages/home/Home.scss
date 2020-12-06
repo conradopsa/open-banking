@@ -4,7 +4,12 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    align-content: space-between;;
+    align-content: space-between;
+
+    a{
+        text-decoration:none;
+        color: #101010
+    }
 }
   .home-header{
     display: flex;
@@ -16,11 +21,14 @@
     justify-content: space-between;
   }
   .home-footer{
+    background-color: #101010;
     position: absolute;
-	bottom: 0;
+    bottom: 0;
+    position: fixed;
+    
   }
 
-  .footer-menu{
+  .home-footer-menu{
     display: flex;
     flex: 1;
     flex-direction: row;
@@ -29,6 +37,7 @@
     padding-right: 20px;
     justify-content: space-between;
     width: 90vw;
+
   }
   
   .setting-icon{

@@ -5,6 +5,7 @@ import {FaLandmark} from 'react-icons/fa';
 import {MdSpeakerPhone} from 'react-icons/md';
 import {BiChevronRight, BiChevronDown} from 'react-icons/bi';
 import image from './../../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -39,14 +40,14 @@ function Home() {
                         <BsFillXDiamondFill color="black" size="30" className="transaction-icon"/>
                         <p className="transaction">PIX</p>
                     </div>
-                    <div class="button-option">
+                    <Link class="button-option" to="/dispositivos" >
                         <MdSpeakerPhone color="black" size="30" className="transaction-icon"/>
                         <p className="meus-name">MEUS</p>
                         <p className="dispositivos-name">DISPOSITIVOS</p>
-                    </div>
+                    </Link>
                 </div>
                 <div className="home-footer">
-                    <div className="footer-menu">
+                    <div className="home-footer-menu">
                         <AiFillHome color="#FFFFFF" size="25" className="home-icon"/>
                         <AiOutlineHistory color="#00D6D6" size="25" className="setting-icon"/>
                         <FaLandmark color="#00D6D6" size="25" className="setting-icon"/>

@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
     root: {
@@ -37,7 +38,9 @@ function Dispositivos() {
         <>
             <div className="dispositivos">
                 <div className="header">
-                    <BiChevronLeft color="#00D6D6" size="30"/>
+                    <Link to="/">
+                        <BiChevronLeft color="#00D6D6" size="30"/>
+                    </Link>
                     <AiFillSetting color="#00D6D6" size="25" className="setting-icon"/>
                 </div>
                 <div className="title-content">

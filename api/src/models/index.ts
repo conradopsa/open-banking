@@ -10,7 +10,8 @@ export class SuperModel extends Model {
 
 //Alert: this models must be in order
 const modelList = [
-    './user'
+    './user',
+    './device' 
 ]
 
 function importModels(): (typeof SuperModel)[] {

@@ -1,0 +1,35 @@
+/pay-auth/{deviceSN}:
+  get:
+    parameters:
+      - in: path
+        name: deviceSN
+        schema:
+          type: string
+        required: true
+        description: Serial number of device
+    tags:
+      - "Authorization Via Payment"
+    responses:
+      200:
+        $ref: "#/components/responses/200"
+
+/user/{userId}/pay-auth/{deviceSN}:
+  post:
+    parameters:
+      - in: path
+        name: userId
+        schema:
+          type: integer
+        required: true
+        description: Numeric ID of the user
+      - in: path
+        name: deviceSN
+        schema:
+          type: string
+        required: true
+        description: Serial number of device
+    tags:
+      - "Authorization Via Payment"
+    responses:
+      200:
+        $ref: "#/components/responses/200"

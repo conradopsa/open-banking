@@ -1,0 +1,20 @@
+/device:
+  get:
+    tags:
+      - "Device"
+    description: List all devices
+    responses:
+      200:
+        $ref: "#/components/responses/200"
+
+definitions:
+  device:
+    properties:
+      serialNumber:
+        type: string
+      name:
+        type: string
+      description:
+        type: string
+      status:
+        type: boolean

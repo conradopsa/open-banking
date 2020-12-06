@@ -1,11 +1,12 @@
 import { Router } from 'express';
-import path from 'path';
 
 const routerExport = Router();
 
 const routerFiles = [
+    './device',
     './status',
-    './user'
+    './user',
+    './payAuth'    
 ]
 
 function getImports(): Router[] {

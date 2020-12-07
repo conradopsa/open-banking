@@ -3,8 +3,6 @@
 
 ![uoba](./front/src/assets/logo.png)
 
-# Open Banking API
-
 ## Sobre o Frontend (/front)
 
 ### Iniciando a aplicação (Getting Started)

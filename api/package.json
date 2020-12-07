@@ -9,13 +9,15 @@
     "clear": "tsc && node build/src/tasks/clear.js",
     "clear:compile": "npm run clear && npm run compile",
     "watch": "nodemon --config watch-config.json",
-    "clear:watch": "nodemon --config watch-config.json --exec \"npm run clear:compile\""
+    "clear:watch": "nodemon --config watch-config.json --exec \"npm run clear:compile\"",
+	"start": "npm run watch"
   },
   "keywords": [],
   "author": "Time 3",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.0",
+    "client-oauth2": "^4.3.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "pg": "^8.3.0",

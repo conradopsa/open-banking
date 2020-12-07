@@ -6,18 +6,24 @@
 ### Telas:
 #### 1. Home
 ![uoba](./src/assets/1.png)
+##### Na tela principal é possível visualizar o saldo do seu cartão pré-pago, botão de acesso ao Pix, botão para começar a realizar transferência, botão para ir à tela que mostra seus dispositivos cadastrados para realizar autenticação. E logo no menu inferior pe possível entrar na tela de histórico de autenticações e um botão de configurações bancárias.
 #### 2. QR Code - Autenticação 
 ![uoba](./src/assets/8.png)
+##### Nessa tela você apresenta na tela o QR Code do dispositivo para realizar a autenticação.
 #### 3. Loading
 ![uoba](./src/assets/7.png)
+##### Após o QR Code autenticado uma tela de loading aparece enquanto que o serviço de autenticação é feito.
 #### 4. Sucesso de Autenticação
 ![uoba](./src/assets/3.png)
+##### Com a autenticação bem sucedida você é informado junto com sua foto cadastrada.
 #### 5. Meus Dispositivos
 ![uoba](./src/assets/4.png)
-#### 6. Histórico de Dispositivos
-![uoba](./src/assets/6.png)
-#### 7. Acessos
+##### O aplicativo possui uma forma de gerenciar todos os seus dispositivos cadastrados. É possível visualizar também a quantidade de acessos permitidos para cada um. Em detalhes é possível visualizar todos os acessos/usuários permitidos.
+#### 6. Acessos
 ![uoba](./src/assets/5.png)
+#### 7. Histórico de Dispositivos
+![uoba](./src/assets/6.png)
+##### Por aqui é possível visualizar todas as suas autenticações em outros dispositivos
 
 
 # Getting Started with Create React App

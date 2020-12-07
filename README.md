@@ -78,12 +78,12 @@ Mais informações sobre a API
 
 - Ao executar, a api irá fornecer um link de documentação mais técnico (feita em Open API 3)
 
-![doc swagger](./readme/doc.png)
+![doc swagger](api/readme/doc.png)
 
 
 - Uma abstração da lógica do serviço de autenticação de pagamento:
 
-![pay auth](./readme/payauth.png)
+![pay auth](api/readme/payauth.png)
 
 
 

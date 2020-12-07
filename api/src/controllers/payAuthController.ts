@@ -26,34 +26,33 @@ export default class PayAuthController {
             if (device === undefined || device === null)
                 return responseError404(response, DEVICE_NOT_FOUND);
 
-
             //Verificar autenticação via pagamento instantâneo
-            const accessGranted = true //await PayAuthService.checkAuthViaPIX()
-            
-            if (!accessGranted){
+            const accessGranted = await PayAuthService
+                .checkAuthViaPayment({ user: user, device: device });
+
+            if (!accessGranted) {
                 response.status(401).json("Acesso negado.");
             }
-            
+
             //Conceder Acesso
             device.status = true;
             await device.save();
-            
+
             response.send("Acesso concedido!");
-            
+
         } catch (error) {
             responseError500(error, response);
         }
 
     }
 
-    static async devicesStatus(request: Request, response: Response) {
+    static async deviceStatus(request: Request, response: Response) {
 
         try {
             const { deviceSN } = request.params;
             const device = await Device.findByPk(deviceSN);
 
-            console.log(device)
-            response.json({status: device?.status});
+            response.json({ status: device?.status });
 
         } catch (error) {
             responseError500(error, response);

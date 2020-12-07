@@ -4,7 +4,7 @@ import PayAuthController from '../controllers/payAuthController';
 
 const router = Router();
 
-router.post('/pay-auth/:deviceSN', PayAuthController.devicesStatus);
+router.get('/pay-auth/:deviceSN', PayAuthController.deviceStatus);
 router.post('/user/:userId/pay-auth/:deviceSN', PayAuthController.requestAuthentication);
 
 export default router

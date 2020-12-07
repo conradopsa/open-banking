@@ -38,9 +38,9 @@
 #### 6. Acessos
 ![uoba](./front/src/assets/5.png)
 ##### Por aqui é possível visualizar todas as autenticações realizas/permitidas em um determinado dispositivo.
-#### 7. Acessos
+#### 7. Histórico de Dispositivos
 ![uoba](./front/src/assets/6.png)
-##### Por aqui é possível visualizar todas as autenticações realizas/permitidas em um determinado dispositivo.
+##### Por aqui é possível visualizar todas as suas autenticações em outros dispositivos
 
 
 ----

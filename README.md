@@ -28,7 +28,7 @@
 
 #### 3. Loading
 ![uoba](./front/src/assets/7.png)
-##### 🎈 Após o QR Code autenticado uma tela de loading aparece enquanto que o serviço de autenticação é feito.
+##### 🎈 Após o QR Code ser reconhecido uma tela de loading aparece enquanto que o serviço de autenticação é feito.
 
 #### 4. Sucesso de Autenticação
 ![uoba](./front/src/assets/3.png)

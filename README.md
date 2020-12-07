@@ -43,6 +43,8 @@
 ##### Por aqui é possível visualizar todas as suas autenticações em outros dispositivos
 
 
+### O App desenvolvido em React além de ser um PWA (Progressive Web App) no qual pode ser acessado em navegadores (mobile e web) é possível migrar todas as suas funcionalidades para React Native (aplicativo nativo Android ou IOS) substituindo apenas algumas codificações (html, css) para JSX.
+
 ----
 
 ## Sobre o Backend (/api)

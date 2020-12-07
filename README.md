@@ -1,3 +1,8 @@
+# UOBA APP -  Unlock Open Banking For All
+### Verificação de identidade usando transferência PIX.
+
+![uoba](./front/src/assets/logo.png)
+
 # Open Banking API
 
 ## Sobre o Frontend (/front)

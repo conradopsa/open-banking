@@ -32,7 +32,7 @@
 ![uoba](./src/assets/6.png)
 ##### 🎈 Nessa tela é possível visualizar todas as autenticações do usuário em outros dispositivos
 
-### ✨ O App desenvolvido em React além de ser um PWA (Progressive Web App) no qual pode ser acessado em navegadores (mobile e web) é possível migrar todas as suas funcionalidades para React Native (aplicativo nativo Android ou IOS) substituindo apenas algumas codificações (html, css) para JSX. ✨
+### ✨ O App desenvolvido em React além de ser um PWA (Progressive Web App) no qual pode ser acessado em navegadores (mobile e web) é possível migrar todas as suas funcionalidades para React Native (aplicativo nativo Android ou IOS) substituindo apenas algumas codificações (html, scss) para JSX. ✨
 
 # Getting Started with Create React App
 

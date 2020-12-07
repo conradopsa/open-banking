@@ -1,3 +1,15 @@
+# UOBA APP -  Unlock Open Banking For All
+
+## Telas:
+### 1. Home
+### 2. QR Code - Autenticação 
+### 3. Loading
+### 4. Sucesso de Autenticação
+### 5. Meus Dispositivos
+### 6. Histórico de Dispositivos
+### 7. Acessos
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

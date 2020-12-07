@@ -19,6 +19,23 @@
 #### `$ yarn start` ou `$ npm start`
 
 ----
+### Telas:
+#### 1. Home
+![uoba](./front/src/assets/1.png)
+#### 2. QR Code - Autenticação 
+![uoba](./front/src/assets/8.png)
+#### 3. Loading
+![uoba](./front/src/assets/7.png)
+#### 4. Sucesso de Autenticação
+![uoba](./front/src/assets/3.png)
+#### 5. Meus Dispositivos
+![uoba](./front/src/assets/4.png)
+#### 6. Histórico de Dispositivos
+![uoba](./front/src/assets/6.png)
+#### 7. Acessos
+![uoba](./front/src/assets/5.png)
+
+----
 
 ## Sobre o Backend (/api)
 

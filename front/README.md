@@ -5,12 +5,19 @@
 
 ### Telas:
 #### 1. Home
+![uoba](./src/assets/1.png)
 #### 2. QR Code - Autenticação 
+![uoba](./src/assets/8.png)
 #### 3. Loading
+![uoba](./src/assets/7.png)
 #### 4. Sucesso de Autenticação
+![uoba](./src/assets/3.png)
 #### 5. Meus Dispositivos
+![uoba](./src/assets/4.png)
 #### 6. Histórico de Dispositivos
+![uoba](./src/assets/6.png)
 #### 7. Acessos
+![uoba](./src/assets/5.png)
 
 
 # Getting Started with Create React App

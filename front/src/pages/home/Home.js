@@ -24,13 +24,13 @@ function Home() {
                     <p className="saldo">SALDO</p>
                     <p className="saldo-value">R$100,00</p>
                 </div>
-                <div className="qrCode">
+                <Link className="qrCode" to="/qrcode">
                     <div className="qrcode-content">
                         <AiOutlineQrcode color="black" size="30"/>
                         <p className="access-name">LIBERAR ACESSO</p>
                         <BiChevronRight color="black" size="30" />
                     </div>
-                </div>
+                </Link>
                 <div className="options">
                     <div class="button-option">
                         <BsArrowLeftRight color="black" size="30" className="transaction-icon"/>
@@ -40,7 +40,7 @@ function Home() {
                         <BsFillXDiamondFill color="black" size="30" className="transaction-icon"/>
                         <p className="transaction">PIX</p>
                     </div>
-                    <Link class="button-option" to="/dispositivos" >
+                    <Link class="button-option" to="/meus-dispositivos" >
                         <MdSpeakerPhone color="black" size="30" className="transaction-icon"/>
                         <p className="meus-name">MEUS</p>
                         <p className="dispositivos-name">DISPOSITIVOS</p>
@@ -49,7 +49,7 @@ function Home() {
                 <div className="home-footer">
                     <div className="home-footer-menu">
                         <AiFillHome color="#FFFFFF" size="25" className="home-icon"/>
-                        <AiOutlineHistory color="#00D6D6" size="25" className="setting-icon"/>
+                        <Link to="/dispositivos"><AiOutlineHistory color="#00D6D6" size="25" className="setting-icon"/></Link>
                         <FaLandmark color="#00D6D6" size="25" className="setting-icon"/>
                     </div>
                 </div>

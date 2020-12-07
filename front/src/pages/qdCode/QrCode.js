@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import QrReader from 'react-qr-scanner';
 import './QrCode.scss';
+import {Redirect} from 'react-router-dom';
+import Typography from '@material-ui/core/Typography';
 
 export default class QrCode extends Component {
     constructor(props){
@@ -8,6 +10,7 @@ export default class QrCode extends Component {
       this.state = {
         delay: 100,
         result: 'No result',
+        isValid: false
       }
    
       this.handleScan = this.handleScan.bind(this)
@@ -15,6 +18,7 @@ export default class QrCode extends Component {
     handleScan(data){
       this.setState({
         result: data,
+        isValid: data ? true : false
       })
     }
     handleError(err){
@@ -22,10 +26,13 @@ export default class QrCode extends Component {
     }
     render(){
       const previewStyle = {
-        height: 240,
-        width: 320,
+        height: '100%',
+        width: '100%',
       }
    
+      if(this.state.isValid ){
+        return <Redirect to="/checked" />
+      } else {
       return(
         <>
             <div className="qrcode">
@@ -36,8 +43,8 @@ export default class QrCode extends Component {
                 onScan={this.handleScan}
                 />
             </div>
-            <p>{this.state.result}</p>
         </>
       )
+      }
     }
   }

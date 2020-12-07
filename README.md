@@ -23,21 +23,27 @@
 #### 1. Home
 ![uoba](./front/src/assets/1.png)
 ##### 🎈 Na tela principal é possível visualizar o saldo do seu cartão pré-pago, botão de acesso ao Pix, botão para começar a realizar transferência, botão para ir à tela que mostra seus dispositivos cadastrados para realizar autenticação. E logo no menu inferior pe possível entrar na tela de histórico de autenticações e um botão de configurações bancárias.
+
 #### 2. QR Code - Autenticação 
 ![uoba](./front/src/assets/8.png)
 ##### 🎈 Nessa tela você apresenta na tela o QR Code do dispositivo para realizar a autenticação.
+
 #### 3. Loading
 ![uoba](./front/src/assets/7.png)
 ##### 🎈 Após o QR Code autenticado uma tela de loading aparece enquanto que o serviço de autenticação é feito.
+
 #### 4. Sucesso de Autenticação
 ![uoba](./front/src/assets/3.png)
 ##### 🎈 Com a autenticação bem sucedida você é informado junto com sua foto cadastrada.
+
 #### 5. Meus Dispositivos
 ![uoba](./front/src/assets/4.png)
 ##### 🎈 O aplicativo possui uma forma de gerenciar todos os seus dispositivos cadastrados. É possível visualizar também a quantidade de acessos permitidos para cada um. Em detalhes é possível visualizar todos os acessos/usuários permitidos.
+
 #### 6. Acessos
 ![uoba](./front/src/assets/5.png)
 ##### 🎈 Por aqui é possível visualizar todas as autenticações realizas/permitidas em um determinado dispositivo.
+
 #### 7. Histórico de Dispositivos
 ![uoba](./front/src/assets/6.png)
 ##### 🎈 Nessa tela é possível visualizar todas as autenticações do usuário em outros dispositivos
@@ -68,19 +74,13 @@
 7. Acesse:
 #### `http://localhost:5445/docs`
 
-### Mais sobre o backend
+### Detalhes do backend
 
-#### Ao executar, a api irá fornecer um link de documentação mais técnico (feita em Open API 3):
+Mais informações sobre a API
 
-![doc swagger](./api/readme/doc.png)
+- Ao executar, a api irá fornecer um link de documentação mais técnico (feita em Open API 3)
 
-Na sessão "Authorization Via Payment", temos um método post (/user/{userId}/pay-auth/{deviceSN}) que é o centro da nossa ideia.
-Nesse método, ocorrerá o que chamamos de "bate-volta" de pagamentos, usando as APIs do open banking, para realizar a autenticação de um disposivo. 
-Abaixo temos uma abstração da lógica desse serviço:
-
-![pay auth](./api/readme/payauth.png)
-
-Ainda na sessão "Authorization Via Payment", o método get (/pay-auth/{deviceSN}), irá servir para dispositivos verificarem se irão conceder acesso ou não, através do atributo status que será um valor verdadeiro ou falso (autenticado ou não).
+- Uma abstração da lógica do serviço de autenticação de pagamento:
 
 
 

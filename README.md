@@ -22,28 +22,28 @@
 ### Telas:
 #### 1. Home
 ![uoba](./front/src/assets/1.png)
-##### Na tela principal é possível visualizar o saldo do seu cartão pré-pago, botão de acesso ao Pix, botão para começar a realizar transferência, botão para ir à tela que mostra seus dispositivos cadastrados para realizar autenticação. E logo no menu inferior pe possível entrar na tela de histórico de autenticações e um botão de configurações bancárias.
+##### 🎈 Na tela principal é possível visualizar o saldo do seu cartão pré-pago, botão de acesso ao Pix, botão para começar a realizar transferência, botão para ir à tela que mostra seus dispositivos cadastrados para realizar autenticação. E logo no menu inferior pe possível entrar na tela de histórico de autenticações e um botão de configurações bancárias.
 #### 2. QR Code - Autenticação 
 ![uoba](./front/src/assets/8.png)
-##### Nessa tela você apresenta na tela o QR Code do dispositivo para realizar a autenticação.
+##### 🎈 Nessa tela você apresenta na tela o QR Code do dispositivo para realizar a autenticação.
 #### 3. Loading
 ![uoba](./front/src/assets/7.png)
-##### Após o QR Code autenticado uma tela de loading aparece enquanto que o serviço de autenticação é feito.
+##### 🎈 Após o QR Code autenticado uma tela de loading aparece enquanto que o serviço de autenticação é feito.
 #### 4. Sucesso de Autenticação
 ![uoba](./front/src/assets/3.png)
-##### Com a autenticação bem sucedida você é informado junto com sua foto cadastrada.
+##### 🎈 Com a autenticação bem sucedida você é informado junto com sua foto cadastrada.
 #### 5. Meus Dispositivos
 ![uoba](./front/src/assets/4.png)
-##### O aplicativo possui uma forma de gerenciar todos os seus dispositivos cadastrados. É possível visualizar também a quantidade de acessos permitidos para cada um. Em detalhes é possível visualizar todos os acessos/usuários permitidos.
+##### 🎈 O aplicativo possui uma forma de gerenciar todos os seus dispositivos cadastrados. É possível visualizar também a quantidade de acessos permitidos para cada um. Em detalhes é possível visualizar todos os acessos/usuários permitidos.
 #### 6. Acessos
 ![uoba](./front/src/assets/5.png)
-##### Por aqui é possível visualizar todas as autenticações realizas/permitidas em um determinado dispositivo.
+##### 🎈 Por aqui é possível visualizar todas as autenticações realizas/permitidas em um determinado dispositivo.
 #### 7. Histórico de Dispositivos
 ![uoba](./front/src/assets/6.png)
-##### Por aqui é possível visualizar todas as suas autenticações em outros dispositivos
+##### 🎈 Nessa tela é possível visualizar todas as autenticações do usuário em outros dispositivos
 
 
-### O App desenvolvido em React além de ser um PWA (Progressive Web App) no qual pode ser acessado em navegadores (mobile e web) é possível migrar todas as suas funcionalidades para React Native (aplicativo nativo Android ou IOS) substituindo apenas algumas codificações (html, css) para JSX.
+### ✨ O App desenvolvido em React além de ser um PWA (Progressive Web App) no qual pode ser acessado em navegadores (mobile e web) é possível migrar todas as suas funcionalidades para React Native (aplicativo nativo Android ou IOS) substituindo apenas algumas codificações (html, css) para JSX. ✨
 
 ----
 

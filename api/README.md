@@ -1,71 +1,38 @@
-# Open Banking API
-
-Autenticação via pagamento instantâneo
-
-## Tecnologias
-
-Esse projeto utiliza:
-
-**Node 14.6**: como ambiente de execução;
-
-**Typescript 3.9**: como linguagem de programação;
-
-**Express 4.17**: para fornecer as rotas e iniciar o servidor REST;
-
-**Sequelize 6.3**: para definir, manipular e consultar o banco de dados;
-
-**PostgreSQL 12**: como SGBD, podendo ser facilmente substituído por outro;
-
-**Swagger (Open API 3)**: para documentar as rotas;
+# UOBA (Unlock Open Banking For All) - App
+### Verificação de identidade usando transferência PIX.
 
 
-## Getting Started
-1. Clone e navegue até o projeto:
->$ git clone https://github.com/conradopsa/open-banking
->$ cd open-banking
+## Sobre o Backend (/api)
+
+### Getting Started
+1. Navegue até a pasta raiz da API:
+#### `$ cd api`
+
 2. Instale as dependências
->$ npm install
-3. Renomeie o arquivo .env-example para .env
+#### `$ yarn` ou `$ npm install`
 
-4. Configure-o
+3. Instale o PostgreSQL mais recente
 
-5. Execute o servidor
->$ npm run watch
-6. Faça um teste:
-> http://localhost:5445/status
+4. Renomeie o arquivo .env-example para .env
 
-## Comandos
-Compila e executa, sempre que houver alterações no código:
-> $ npm run watch
- 
-Apaga todos arquivos antigos no destino (src/build), compila e executa, sempre que houver alterações no código (mais demorado):
-> $ npm run clear:watch
+5. Configure-o
 
-Observação: Esses dois são os principais comandos
+6. Execute o servidor
+#### `$ npm run watch`
 
----
-Apaga todos arquivos antigos no destino:
-> $ npm run clear
+7. Acesse:
+#### `http://localhost:5445/docs`
 
-Apaga todos arquivos antigos no destino e compila:
-> $ npm run clear:compile
+### Mais sobre o backend
 
-Compila o código:
-> $ npm run compile
+#### Ao executar, a api irá fornecer um link de documentação mais técnico (feita em Open API 3):
 
-## Arquitetura do projeto
-Esse projeto está aderindo o padrão MVC, onde:
->**models** estão em src/models;
+![doc swagger](./api/readme/doc.png)
 
->**views** estão em src/routers
+Na sessão "Authorization Via Payment", temos um método post (/user/{userId}/pay-auth/{deviceSN}) que é o centro da nossa ideia.
+Nesse método, ocorrerá o que chamamos de "bate-volta" de pagamentos, usando as APIs do open banking, para realizar a autenticação de um disposivo. 
+Abaixo temos uma abstração da lógica desse serviço:
 
->**controllers** estão em src/controllers
+![pay auth](./api/readme/payauth.png)
 
-Módulos extras
-> *src/tasks* estão as tarefas
-
-> *src/utils*  estão os utilitários
-
-> *src/middleware* estão os middlewares
-
-> *src/config* estão as configurações
+Ainda na sessão "Authorization Via Payment", o método get (/pay-auth/{deviceSN}), irá servir para dispositivos verificarem se irão conceder acesso ou não, através do atributo status que será um valor verdadeiro ou falso (autenticado ou não).

@@ -1,7 +1,7 @@
 # UOBA APP -  Unlock Open Banking For All
 ### Verificação de identidade usando transferência PIX.
 
-![logo.png](/src/assets/logo.png)
+![uoba](./src/assets/logo.png)
 
 ### Telas:
 #### 1. Home
